@@ -1,14 +1,22 @@
-import React, { JSX } from "react";
-import personal from "../../data/personal.json";
+import profile from "../../data/personal.json";
+import "./Profile.css";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
-export default function Profile(): JSX.Element {
+export default function Profile() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section className="py-16 px-6">
-      <div className="max-w-4xl mx-auto text-slate-300">
-        <h2 className="text-3xl font-bold mb-4">Perfil Profesional</h2>
-        <p className="leading-relaxed">
-          {personal.tagline}
-        </p>
+    <section ref={revealRef} className="profile section-spacing reveal">
+      <div className="container-main profile-wrapper">
+        <h2 className="profile-title">{profile.title}</h2>
+
+        <div className="profile-content">
+          {profile.summary.map((paragraph, index) => (
+            <p key={index} className="profile-text">
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </section>
   );

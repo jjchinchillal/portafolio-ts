@@ -1,0 +1,54 @@
+.profile {
+  background: transparent;
+}
+
+/* Contenedor */
+.profile-wrapper {
+  max-width: 900px;
+}
+
+/* Título */
+.profile-title {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--text-main);
+}
+
+/* Contenido */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Texto */
+.profile-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+  .profile-wrapper {
+    text-align: center;
+  }
+
+  .profile-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 1.6rem;
+  }
+
+  .profile-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}

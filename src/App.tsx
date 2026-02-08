@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="min-h-screen">
 
-      <main className="flex flex-col gap-24">
+      <main className="main-layout">
 
         <Hero />
         <Profile />

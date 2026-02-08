@@ -1,4 +1,18 @@
-/* micro animations */
+/* ===== REVEAL BASE ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* cuando entra en viewport */
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* micro animación (solo hero) */
 @keyframes floatY {
   0% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -9,11 +23,15 @@
   animation: floatY 4s ease-in-out infinite;
 }
 
-/* fade in */
-.fade-in {
-  animation: fadeIn .7s ease both;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+/* accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .float-y {
+    animation: none;
+  }
 }

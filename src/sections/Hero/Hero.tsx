@@ -1,41 +1,82 @@
+import "./hero.css";
 import profileImg from "../../assets/images/Profile.webp";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import cvPdf from "../../assets/doc/CV.pdf";
+
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaWhatsapp,
+  FaDownload
+} from "react-icons/fa";
+
 import personal from "../../data/personal.json";
 
 export default function Hero() {
   return (
-    <section className="min-h-[85vh] flex items-center">
-      <div className="container-main grid md:grid-cols-2 gap-12 items-center">
+    <section className="hero">
+      <div className="container-main hero-grid">
 
-        {/* TEXT */}
-        <div className="space-y-6">
-          <h1 className="bg-gradient-to-r from-[#DD2343] to-[#00345D] bg-clip-text text-transparent">
+        {/* IMAGE */}
+        <div className="hero-image fade-in">
+          <div className="hero-avatar float-y">
+            <img src={profileImg} alt={personal.name} />
+          </div>
+        </div>
+
+        {/* CONTENT */}
+        <div className="hero-content">
+          <h1 className="hero-name fade-in">
             {personal.name}
           </h1>
 
-          <h3 className="text-[#DD2343]">
+          <h2
+            className="hero-role fade-in"
+            style={{ animationDelay: "120ms" }}
+          >
             {personal.role}
-          </h3>
+          </h2>
 
-          <p className="text-slate-400 max-w-lg">
+          <p
+            className="fade-in"
+            style={{ animationDelay: "240ms" }}
+          >
             {personal.tagline}
           </p>
 
-          <div className="flex gap-5 text-2xl">
-            <FaGithub className="hover:text-[#DD2343] cursor-pointer"/>
-            <FaLinkedin className="hover:text-[#DD2343] cursor-pointer"/>
-            <FaEnvelope className="hover:text-[#DD2343] cursor-pointer"/>
-          </div>
+          <div
+            className="hero-icons fade-in"
+            style={{ animationDelay: "360ms" }}
+          >
+            <a href={personal.github} target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
 
-          <button className="btn-accent">
-            Contactar
-          </button>
-        </div>
+            <a href={personal.linkedin} target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
 
-        {/* IMAGE */}
-        <div className="flex justify-center md:justify-end">
-          <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-[#DD2343]/60 shadow-xl">
-            <img src={profileImg} className="w-full h-full object-cover"/>
+            <a
+              href={`mailto:${personal.email}`}
+              aria-label="Enviar correo"
+            >
+              <FaEnvelope />
+            </a>
+
+            <a
+              href={personal.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Contactar por WhatsApp"
+            >
+              <FaWhatsapp />
+            </a>
+
+            {/* CV */}
+            <a href={cvPdf} download className="cv-icon">
+              <FaDownload />
+              <span>Descargar CV</span>
+            </a>
           </div>
         </div>
 
