@@ -1,0 +1,111 @@
+.stack {
+  background: transparent;
+}
+
+.stack-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 56px;
+  color: var(--text-main);
+}
+
+/* Grid */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.stack-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 28px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
+}
+
+.stack-card-title {
+  font-size: 1.2rem;
+  margin-bottom: 22px;
+  color: var(--accent-primary);
+  text-align: center;
+}
+
+/* Icons */
+.stack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.stack-icon {
+  position: relative;
+  font-size: 2.1rem;
+  color: var(--text-main); /* Blanco por defecto */
+  transition: transform .25s ease, color .25s ease;
+}
+
+/* Hover = color oficial */
+.stack-icon:hover {
+  transform: translateY(-6px);
+  color: var(--icon-color);
+}
+
+/* Focus accesible */
+.stack-icon:focus-visible {
+  color: var(--icon-color);
+  outline: 2px solid var(--icon-color);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .75rem;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, .85);
+  color: #fff;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.stack-icon:hover .tooltip,
+.stack-icon:focus-visible .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}
+
+/* Reveal animation */
+.reveal-active .stack-card {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.reveal-active .stack-card:nth-child(1) { animation-delay: .1s; }
+.reveal-active .stack-card:nth-child(2) { animation-delay: .2s; }
+.reveal-active .stack-card:nth-child(3) { animation-delay: .3s; }
+.reveal-active .stack-card:nth-child(4) { animation-delay: .4s; }
+.reveal-active .stack-card:nth-child(5) { animation-delay: .5s; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}

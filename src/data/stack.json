@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Frontend Web",
+    "items": [
+      { "name": "React", "icon": "SiReact", "url": "https://react.dev", "color": "#61DAFB" },
+      { "name": "TypeScript", "icon": "SiTypescript", "url": "https://www.typescriptlang.org/docs", "color": "#3178C6" },
+      { "name": "JavaScript", "icon": "SiJavascript", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "color": "#F7DF1E" },
+      { "name": "HTML", "icon": "SiHtml5", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML", "color": "#E34F26" },
+      { "name": "CSS", "icon": "SiCss3", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "color": "#1572B6" },
+      { "name": "Stencil", "icon": "SiStencil", "url": "https://stenciljs.com/docs/introduction", "color": "#5530FF" },
+      { "name": "Vite", "icon": "SiVite", "url": "https://vitejs.dev/guide", "color": "#646CFF" }
+    ]
+  },
+  {
+    "category": "Desarrollo Móvil",
+    "items": [
+      { "name": "Flutter", "icon": "SiFlutter", "url": "https://docs.flutter.dev", "color": "#02569B" },
+      { "name": "Dart", "icon": "SiDart", "url": "https://dart.dev/guides", "color": "#0175C2" }
+    ]
+  },
+  {
+    "category": "Backend & Bases de Datos",
+    "items": [
+      { "name": "Node.js", "icon": "SiNodedotjs", "url": "https://nodejs.org/en/docs", "color": "#339933" },
+      { "name": "Java", "icon": "SiOpenjdk", "url": "https://docs.oracle.com/en/java", "color": "#EA2D2E" },
+      { "name": "PostgreSQL", "icon": "SiPostgresql", "url": "https://www.postgresql.org/docs", "color": "#4169E1" },
+      { "name": "MySQL", "icon": "SiMysql", "url": "https://dev.mysql.com/doc", "color": "#4479A1" },
+      { "name": "MongoDB", "icon": "SiMongodb", "url": "https://www.mongodb.com/docs", "color": "#47A248" },
+      { "name": "Firebase", "icon": "SiFirebase", "url": "https://firebase.google.com/docs", "color": "#FFCA28" },
+      { "name": "Supabase", "icon": "SiSupabase", "url": "https://supabase.com/docs", "color": "#3ECF8E" }
+    ]
+  },
+  {
+    "category": "DevOps & Herramientas",
+    "items": [
+      { "name": "Git", "icon": "SiGit", "url": "https://git-scm.com/doc", "color": "#F05032" },
+      { "name": "GitHub", "icon": "SiGithub", "url": "https://docs.github.com", "color": "#FFFFFF" },
+      { "name": "Vercel", "icon": "SiVercel", "url": "https://vercel.com/docs", "color": "#FFFFFF" }
+    ]
+  },
+  {
+    "category": "Gestión & Metodologías",
+    "items": [
+      { "name": "Scrum", "icon": "SiScrumalliance", "url": "https://scrumguides.org", "color": "#009FDA" }
+    ]
+  }
+]

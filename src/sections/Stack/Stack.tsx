@@ -1,29 +1,46 @@
-import React, { JSX } from "react";
-import { SiReact, SiTypescript, SiFlutter, SiPostgresql, SiMongodb, SiNodedotjs } from "react-icons/si";
+import * as Icons from "react-icons/si";
+import stack from "../../data/stack.json";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
+import "./Stack.css";
 
-const tech = [
-  { name: "React", icon: <SiReact /> },
-  { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "Flutter", icon: <SiFlutter /> },
-  { name: "Node.js", icon: <SiNodedotjs /> },
-  { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-];
+export default function Stack() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
 
-export default function Stack(): JSX.Element {
   return (
-    <section id="stack" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Stack Tecnológico</h2>
+    <section ref={revealRef} className="stack section-spacing reveal">
+      <div className="container-main">
 
-        <div className="flex flex-wrap justify-center gap-6">
-          {tech.map((t, i) => (
-            <div key={i} className="w-44 bg-white/3 p-4 rounded-lg border border-white/5 flex flex-col items-center gap-2">
-              <div className="text-2xl text-cyan-300">{t.icon}</div>
-              <div className="text-sm text-slate-200">{t.name}</div>
+        <h2 className="stack-title">Stack Tecnológico</h2>
+
+        <div className="stack-grid">
+          {stack.map((group, index) => (
+            <div key={index} className="stack-card">
+              <h3 className="stack-card-title">{group.category}</h3>
+
+              <div className="stack-icons">
+                {group.items.map((tech, idx) => {
+                  const Icon = (Icons as any)[tech.icon];
+
+                  return (
+                    <a
+                    key={idx}
+                    href={tech.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="stack-icon"
+                    aria-label={tech.name}
+                    style={{ "--icon-color": tech.color } as React.CSSProperties}
+                  >
+                    <Icon />
+                    <span className="tooltip">{tech.name}</span>
+                  </a>
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
