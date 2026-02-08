@@ -3,45 +3,58 @@ import BosqueLogo from "../../assets/logos/BosqueNagal.png";
 import FunigualdadLogo from "../../assets/logos/Funigualdad.png";
 import InstitutoLogo from "../../assets/logos/InstitutoFrances.png";
 
-const logos: any = {
+import { FaGlobe, FaInstagram } from "react-icons/fa";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
+
+import "./Experience.css";
+
+const logos: Record<string, string> = {
   "Grupo Nagal S.A.S": BosqueLogo,
   "Fundación FUNIGUALDADH": FunigualdadLogo,
   "Proyecto Instituto Francés": InstitutoLogo,
 };
 
 export default function Experience() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section className="section-spacing">
+    <section ref={revealRef} className="experience section-spacing reveal">
       <div className="container-main">
 
-        <h2 className="mb-14 text-center">
-          Experiencia Profesional
-        </h2>
+        <h2 className="experience-title">Experiencia Profesional</h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {experience.map((job: any, i: number) => (
-            <div key={i} className="card-tech p-7 flex gap-5">
+        <div className="experience-grid">
+          {experience.map((job, index) => (
+            <article key={index} className="experience-card">
 
-              <img
-                src={logos[job.company]}
-                className="w-16 h-16 object-contain"
-              />
+              <div className="experience-logo">
+                <img src={logos[job.company]} alt={job.company} />
+              </div>
 
-              <div className="space-y-3">
-                <h3>{job.company}</h3>
-
-                <p className="text-sm text-[#DD2343]">
+              <div className="experience-info">
+                <h3 className="experience-company">{job.company}</h3>
+                <p className="experience-role">
                   {job.role} · {job.period}
                 </p>
 
-                <ul className="text-slate-400 text-sm space-y-1 list-disc list-inside">
-                  {job.tasks.map((t:string, idx:number) =>
-                    <li key={idx}>{t}</li>
-                  )}
+                <ul className="experience-tasks">
+                  {job.tasks.map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
                 </ul>
 
+                <div className="experience-links">
+                  <a href={job.website} target="_blank" rel="noreferrer">
+                    <FaGlobe /> Sitio web
+                  </a>
+
+                  <a href={job.instagram} target="_blank" rel="noreferrer">
+                    <FaInstagram /> Instagram
+                  </a>
+                </div>
               </div>
-            </div>
+
+            </article>
           ))}
         </div>
 

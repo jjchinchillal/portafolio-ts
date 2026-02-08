@@ -1,0 +1,149 @@
+.experience {
+  background: transparent;
+}
+
+/* Título */
+.experience-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 56px;
+  color: var(--text-main);
+}
+
+/* Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.experience-card {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  min-height: 360px; /* 🔥 tamaño consistente */
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.25);
+}
+
+/* Logo wrapper */
+.experience-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.9); /* 🔥 neutraliza fondos blancos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.experience-logo img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Info */
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.experience-role {
+  font-size: .9rem;
+  color: var(--accent-primary);
+}
+
+/* Tasks */
+.experience-tasks {
+  margin-top: 8px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.experience-tasks li {
+  font-size: .95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Links */
+.experience-links {
+  margin-top: auto;
+  display: flex;
+  gap: 18px;
+}
+
+.experience-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .9rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.experience-links a:hover {
+  text-decoration: underline;
+}
+
+/* Animación on scroll */
+.reveal-active .experience-card {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.reveal-active .experience-card:nth-child(1) { animation-delay: .1s; }
+.reveal-active .experience-card:nth-child(2) { animation-delay: .2s; }
+.reveal-active .experience-card:nth-child(3) { animation-delay: .3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-tasks {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .experience-links {
+    justify-content: center;
+  }
+}

@@ -1,40 +1,49 @@
 [
   {
     "company": "Grupo Nagal S.A.S",
-    "role": "Frontend & Mobile Developer",
-    "period": "Mayo 2024 – Actualidad",
+    "role": "Desarrollador de Software (Frontend & Mobile)",
+    "period": "Mayo 2024 – Diciembre 2025",
     "tasks": [
-      "Desarrollo de aplicaciones móviles desde cero utilizando Flutter y Dart con enfoque en rendimiento y UX.",
-      "Migración y modernización de aplicativos a Flutter para mejorar mantenimiento y escalabilidad.",
-      "Desarrollo web con TypeScript (TSX) y Stencil de componentes reutilizables.",
-      "Consumo de APIs REST e integración con CRM.",
-      "Implementación de procesos para cargas masivas y sincronización entre aplicaciones."
+      "Desarrollo de interfaces web con TypeScript y Stencil, creando componentes reutilizables y librerías compartidas.",
+      "Diseño e implementación de interfaces responsivas, accesibles y orientadas a la experiencia de usuario.",
+      "Desarrollo de aplicaciones móviles con Flutter y Dart desde la concepción hasta la entrega.",
+      "Integración y consumo de APIs REST.",
+      "Migración y modernización de aplicaciones móviles y web para mejorar mantenibilidad y escalabilidad.",
+      "Coordinación técnica y gestión del proyecto móvil (Project Manager).",
+      "Implementación de procesos de cargas masivas y sincronización entre plataformas.",
+      "Aplicación de buenas prácticas de desarrollo y control de versiones."
     ],
-    "website": "",
-    "linkedin": ""
+    "website": "https://bosquenagal.com/",
+    "instagram": "https://www.instagram.com/bosque_nagal"
   },
   {
     "company": "Fundación FUNIGUALDADH",
-    "role": "Desarrollador Web",
+    "role": "Desarrollador de Software",
     "period": "Marzo 2024 – Julio 2024",
     "tasks": [
-      "Mantenimiento y desarrollo de sitios institucionales usando Astro y React.",
-      "Optimización de rendimiento y mejora de experiencia de usuario.",
-      "Soporte técnico y elaboración de documentación y manuales de usuario.",
-      "Revisión de proyectos y recomendaciones de mejora."
+      "Refactorización y mejora de código para optimizar rendimiento y mantenibilidad.",
+      "Ajustes y mejoras en Backend para soporte de nuevas funcionalidades.",
+      "Diseño y ajustes de Frontend enfocados en UX/UI.",
+      "Desarrollo e integración de nuevos módulos funcionales.",
+      "Trabajo colaborativo en pruebas, despliegues y soporte técnico."
     ],
-    "website": "",
-    "linkedin": ""
+    "website": "https://funigualdadh.org/",
+    "instagram": "https://www.instagram.com/funigualdadh"
   },
   {
     "company": "Proyecto Instituto Francés",
-    "role": "Desarrollador & PM (Proyecto individual)",
-    "period": "2025 – Actualidad",
+    "role": "Desarrollador de Software & Gestor de Proyecto",
+    "period": "Abril 2024 – Actualidad",
     "tasks": [
-      "Desarrollo de plataforma web institucional con Vite, TypeScript, Node.js y Supabase.",
-      "Liderazgo técnico y despliegue en Vercel."
+      "Desarrollo de plataforma web institucional para oferta de servicios de aprendizaje de idiomas.",
+      "Implementación de interfaces modernas y responsivas enfocadas en UX.",
+      "Desarrollo con TypeScript, Vite y Node.js.",
+      "Despliegue y gestión del dominio en Vercel.",
+      "Integración de Supabase para datos, autenticación y servicios Backend.",
+      "Coordinación del desarrollo inicial del aplicativo móvil (en construcción).",
+      "Gestión del proyecto bajo metodologías ágiles con enfoque en escalabilidad."
     ],
-    "website": "",
-    "linkedin": ""
+    "website": "https://www.institutofrances.org/",
+    "instagram": "https://www.instagram.com/institutofrances"
   }
 ]
