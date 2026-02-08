@@ -1,0 +1,13 @@
+[
+  { "title": "Desarrollo Backend con JAVA", "institution": "Platzi", "year": 2023, "link": "" },
+  { "title": "Curso Avanzado de Java SE", "institution": "Platzi", "year": 2023, "link": "" },
+  { "title": "Project Management", "institution": "Platzi", "year": 2023, "link": "" },
+  { "title": "Estrategias para Negocios Digitales", "institution": "Platzi", "year": 2023, "link": "" },
+  { "title": "Diplomado en Programación en PHP", "institution": "PHP", "year": 2023, "link": "" },
+  { "title": "CCNAv7 Introducción a Redes", "institution": "CISCO", "year": 2023, "link": "" },
+  { "title": "Seguridad Cibernética", "institution": "CISCO", "year": 2023, "link": "" },
+  { "title": "NDG Linux Unhatched", "institution": "CISCO", "year": 2023, "link": "" },
+  { "title": "Inteligencia Artificial", "institution": "Generación TIC", "year": 2024, "link": "" },
+  { "title": "Flutter Móvil: De Cero a Experto", "institution": "Udemy", "year": 2024, "link": "" },
+  { "title": "Flutter Avanzado", "institution": "Udemy", "year": 2024, "link": "" }
+]

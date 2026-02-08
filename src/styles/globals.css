@@ -1,8 +1,78 @@
+@import "./variable.css";
+@import "./animations.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ===== BASE ===== */
+
+html, body, #root {
+  height: 100%;
+}
 
 body {
-background: radial-gradient(circle at top, #1e1b4b, #020617);
+  background: radial-gradient(circle at top, #020617, #01030a);
+  color: var(--text-main);
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== LAYOUT SYSTEM ===== */
+
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.section-spacing {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* ===== TYPOGRAPHY SCALE ===== */
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ===== COMPONENT BASE ===== */
+
+.card-tech {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+
+.card-tech:hover {
+  border-color: rgba(221,35,67,0.4);
+  transform: translateY(-4px);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #DD2343, #A81B33);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.btn-accent:hover {
+  box-shadow: var(--glow-primary);
+  transform: translateY(-2px);
 }

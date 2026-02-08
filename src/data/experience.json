@@ -1,11 +1,40 @@
 [
-{
-"company": "Grupo Nagal",
-"role": "Frontend & Mobile Developer",
-"tasks": [
-"Desarrollo Flutter",
-"Desarrollo TSX y Stencil",
-"Consumo APIs REST"
-]
-}
+  {
+    "company": "Grupo Nagal S.A.S",
+    "role": "Frontend & Mobile Developer",
+    "period": "Mayo 2024 – Actualidad",
+    "tasks": [
+      "Desarrollo de aplicaciones móviles desde cero utilizando Flutter y Dart con enfoque en rendimiento y UX.",
+      "Migración y modernización de aplicativos a Flutter para mejorar mantenimiento y escalabilidad.",
+      "Desarrollo web con TypeScript (TSX) y Stencil de componentes reutilizables.",
+      "Consumo de APIs REST e integración con CRM.",
+      "Implementación de procesos para cargas masivas y sincronización entre aplicaciones."
+    ],
+    "website": "",
+    "linkedin": ""
+  },
+  {
+    "company": "Fundación FUNIGUALDADH",
+    "role": "Desarrollador Web",
+    "period": "Marzo 2024 – Julio 2024",
+    "tasks": [
+      "Mantenimiento y desarrollo de sitios institucionales usando Astro y React.",
+      "Optimización de rendimiento y mejora de experiencia de usuario.",
+      "Soporte técnico y elaboración de documentación y manuales de usuario.",
+      "Revisión de proyectos y recomendaciones de mejora."
+    ],
+    "website": "",
+    "linkedin": ""
+  },
+  {
+    "company": "Proyecto Instituto Francés",
+    "role": "Desarrollador & PM (Proyecto individual)",
+    "period": "2025 – Actualidad",
+    "tasks": [
+      "Desarrollo de plataforma web institucional con Vite, TypeScript, Node.js y Supabase.",
+      "Liderazgo técnico y despliegue en Vercel."
+    ],
+    "website": "",
+    "linkedin": ""
+  }
 ]

@@ -1,7 +1,9 @@
 [
-{
-"name": "Instituto Francés",
-"description": "Plataforma web institucional",
-"image": "/images/projects/instituto.png"
-}
+  {
+    "name": "Plataforma Instituto Francés",
+    "description": "Plataforma web institucional desarrollada con Vite, TypeScript y Supabase. Despliegue en Vercel.",
+    "image": "/assets/logos/InstitutoFrances.png",
+    "demo": "",
+    "repo": ""
+  }
 ]

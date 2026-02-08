@@ -1,0 +1,7 @@
+[
+  { "name": "Flutter / Dart", "level": 90 },
+  { "name": "TypeScript / JavaScript", "level": 88 },
+  { "name": "React / Astro", "level": 85 },
+  { "name": "Bases de Datos (PostgreSQL / MySQL / MongoDB)", "level": 80 },
+  { "name": "CI / CD (Vercel)", "level": 75 }
+]
