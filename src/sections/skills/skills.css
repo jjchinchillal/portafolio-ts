@@ -1,0 +1,101 @@
+.skills {
+  background: transparent;
+}
+
+.skills-wrapper {
+  text-align: center;
+}
+
+/* Text */
+.skills-title {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.skills-subtitle {
+  color: var(--text-soft);
+  max-width: 520px;
+  margin: 0 auto 48px;
+}
+
+/* List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* Card */
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+/* Header */
+.skill-header {
+  margin-bottom: 14px;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-icon {
+  font-size: 1.6rem;
+}
+
+.skill-name {
+  font-weight: 600;
+}
+
+/* Progress bar */
+.skill-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+
+/* 🔥 REVEAL ANIMATION (IGUAL QUE STACK) */
+.reveal-active .skill-card {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.reveal-active .skill-card:nth-child(1) { animation-delay: .1s; }
+.reveal-active .skill-card:nth-child(2) { animation-delay: .2s; }
+.reveal-active .skill-card:nth-child(3) { animation-delay: .3s; }
+.reveal-active .skill-card:nth-child(4) { animation-delay: .4s; }
+.reveal-active .skill-card:nth-child(5) { animation-delay: .5s; }
+
+/* Barra animada al entrar */
+.reveal-active .skill-progress {
+  width: var(--skill-level);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}

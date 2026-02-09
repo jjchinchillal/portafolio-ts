@@ -1,7 +1,7 @@
 import * as Icons from "react-icons/si";
 import skills from "../../data/skills.json";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
-import "./Skills.css";
+import "./skills.css";
 
 export default function Skills() {
   const revealRef = useRevealOnScroll<HTMLElement>();

@@ -1,0 +1,121 @@
+.certifications {
+  background: transparent;
+}
+
+.certifications-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-main);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ======================
+   CARD
+====================== */
+
+.certification-card {
+  position: relative;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition: 
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ======================
+   LOGO (REDUCIDO + SUAVE)
+====================== */
+
+.certification-logo {
+  max-width: 96px;     /* ⬅️ reducido */
+  max-height: 96px;
+  width: auto;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 14px;
+
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+.certification-card:hover .certification-logo {
+  transform: scale(1.05);
+  opacity: .95;
+}
+
+/* ======================
+   TEXTOS
+====================== */
+
+.certification-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.certification-tooltip {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 768px) {
+  .certification-logo {
+    max-width: 88px;
+    max-height: 88px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-logo {
+    max-width: 72px;
+    max-height: 72px;
+  }
+
+  .certification-title {
+    font-size: 0.95rem;
+  }
+}
+/* ======================
+   REVEAL ANIMATION
+====================== */
+
+.certification-card.reveal {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+}
+
+.reveal-active .certification-card.reveal {
+  animation: certificationReveal 0.6s ease forwards;
+}
+
+@keyframes certificationReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

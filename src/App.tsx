@@ -1,14 +1,14 @@
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import Skills from "./sections/Skills/Skills";
-import SoftSkills from "./sections/SoftSkills/SoftSkills";
-import Hero from "./sections/Hero/Hero";
-import Profile from "./sections/Profile/Profile";
-import Experience from "./sections/Experience/Experience";
-import Stack from "./sections/Stack/Stack";
-import Projects from "./sections/Projects/Projects";
-import Certifications from "./sections/Certifications/Certifications";
-import Contact from "./sections/Contact/Contact";
+import Skills from "./sections/skills/skills";
+import SoftSkills from "./sections/softSkills/softSkills";
+import Hero from "./sections/hero/hero";
+import Profile from "./sections/profile/profile";
+import Experience from "./sections/experience/experience";
+import Stack from "./sections/stack/stack";
+import Projects from "./sections/projects/projects";
+import Certifications from "./sections/certifications/certifications";
+import Contact from "./sections/contact/contact";
 
 export default function App() {
   return (
