@@ -1,19 +1,79 @@
-import React, { JSX } from "react";
+import React from "react";
 import personal from "../../data/personal.json";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
-export default function PersonalInfo(): JSX.Element {
+import {
+  FaUser,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+  FaLinkedin,
+  FaGithub
+} from "react-icons/fa";
+
+import "./personalInfo.css";
+
+export default function PersonalInfo() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section id="profile" className="py-12 px-6">
-      <div className="max-w-4xl mx-auto bg-white/2 p-6 rounded-2xl border border-white/5">
-        <h2 className="text-2xl font-bold mb-4">Información Personal</h2>
+    <section
+      ref={revealRef}
+      id="profile"
+      className="profile-section reveal"
+    >
+      <div className="profile-container">
+        <div className="profile-card">
 
-        <div className="grid md:grid-cols-2 gap-4 text-slate-300">
-          <div><span className="text-cyan-400">Nombre:</span> {personal.name}</div>
-          <div><span className="text-cyan-400">Ubicación:</span> {personal.location}</div>
-          <div><span className="text-cyan-400">Email:</span> {personal.email}</div>
-          <div><span className="text-cyan-400">Teléfono:</span> {personal.phone}</div>
-          <div><span className="text-cyan-400">LinkedIn:</span> <a className="text-cyan-300" href={personal.linkedin} target="_blank" rel="noreferrer">{personal.linkedin}</a></div>
-          <div><span className="text-cyan-400">GitHub:</span> <a className="text-cyan-300" href={personal.github} target="_blank" rel="noreferrer">{personal.github}</a></div>
+          <h2 className="profile-title">
+            <FaUser />
+            Información
+          </h2>
+
+          <div className="profile-grid">
+
+            <div className="profile-item">
+              <FaUser />
+              <span>{personal.name}</span>
+            </div>
+
+            <div className="profile-item">
+              <FaMapMarkerAlt />
+              <span>{personal.location}</span>
+            </div>
+
+            <div className="profile-item">
+              <FaEnvelope />
+              <span>{personal.email}</span>
+            </div>
+
+            <div className="profile-item">
+              <FaPhone />
+              <span>{personal.phone}</span>
+            </div>
+
+            <a
+              className="profile-item profile-link"
+              href={personal.linkedin}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              className="profile-item profile-link"
+              href={personal.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
         </div>
       </div>
     </section>

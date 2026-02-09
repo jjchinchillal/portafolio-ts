@@ -1,21 +1,77 @@
-import React, { JSX } from "react";
+import React from "react";
 import educations from "../../data/educations.json";
+import { FaGraduationCap } from "react-icons/fa";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
-export default function Education(): JSX.Element {
+import "./education.css";
+
+export default function Education() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section id="education" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Educación</h2>
+    <section
+      ref={revealRef}
+      id="education"
+      className="edu-section reveal"
+    >
+      <div className="edu-container">
+        <div className="edu-card">
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {educations.map((e: any, i: number) => (
-            <div key={i} className="bg-white/3 p-5 rounded-xl border border-white/5">
-              <h3 className="font-semibold">{e.institution}</h3>
-              <p className="text-slate-300 text-sm">{e.degree}</p>
-              <p className="text-slate-400 text-sm mt-2">{e.note}</p>
-              <p className="text-xs text-slate-500 mt-3">{e.period}</p>
-            </div>
-          ))}
+          <h2 className="edu-title">
+            <FaGraduationCap />
+            Formación Académica
+          </h2>
+
+          <div className="edu-timeline">
+
+            {educations.map((e: any, i: number) => (
+              <div key={i} className="edu-item">
+
+                <div className="edu-dot" />
+
+                <div className="edu-content">
+                  <h3>{e.degree}</h3>
+
+                  <p className="edu-institution">
+                    {e.institution}
+                  </p>
+
+                  {e.status && (
+                    <p className="edu-note">
+                      Estado: {e.status}
+                    </p>
+                  )}
+
+                  {e.internships && (
+                    <p className="edu-note">
+                      Pasantías: {e.internships}
+                    </p>
+                  )}
+
+                  {e.currentState && (
+                    <p className="edu-note">
+                      Estado actual: {e.currentState}
+                    </p>
+                  )}
+
+                  {e.note && (
+                    <p className="edu-note">
+                      {e.note}
+                    </p>
+                  )}
+
+                  {e.period && (
+                    <span className="edu-period">
+                      {e.period}
+                    </span>
+                  )}
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
         </div>
       </div>
     </section>

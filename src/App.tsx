@@ -3,8 +3,7 @@ import Footer from "./components/layout/Footer";
 import Skills from "./sections/skills/skills";
 import SoftSkills from "./sections/softSkills/softSkills";
 import Hero from "./sections/hero/hero";
-import PersonalInfo from "./sections/personalInfo/personalInfo";
-import Education from "./sections/education/education";
+import ProfileEducationRow from "./components/layout/ProfileEducationRow";
 import Profile from "./sections/profile/profile";
 import Experience from "./sections/experience/experience";
 import Stack from "./sections/stack/stack";
@@ -19,8 +18,7 @@ export default function App() {
       <main className="main-layout">
 
         <Hero />
-        <PersonalInfo />
-        <Education />
+        <ProfileEducationRow />
         <Profile />
         <Experience />
         <Stack />
