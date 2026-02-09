@@ -3,7 +3,7 @@ import projects from "../../data/projects.json";
 import * as SiIcons from "react-icons/si";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
-import "./Projects.css";
+import "./projects.css";
 
 export default function Projects(): JSX.Element {
   const revealRef = useRevealOnScroll<HTMLElement>();

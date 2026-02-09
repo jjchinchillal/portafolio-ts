@@ -6,7 +6,7 @@ import InstitutoLogo from "../../assets/logos/InstitutoFrances.png";
 import { FaGlobe, FaInstagram } from "react-icons/fa";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
-import "./Experience.css";
+import "./experience.css";
 
 const logos: Record<string, string> = {
   "Grupo Nagal S.A.S": BosqueLogo,

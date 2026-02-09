@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import certifications from "../../data/certifications.json";
-import "./Certifications.css";
+import "./certifications.css";
 
 export default function Certifications(): JSX.Element {
   return (

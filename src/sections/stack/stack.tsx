@@ -1,7 +1,7 @@
 import * as Icons from "react-icons/si";
 import stack from "../../data/stack.json";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
-import "./Stack.css";
+import "./stack.css";
 
 export default function Stack() {
   const revealRef = useRevealOnScroll<HTMLElement>();

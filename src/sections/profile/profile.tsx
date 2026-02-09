@@ -1,5 +1,5 @@
 import profile from "../../data/personal.json";
-import "./Profile.css";
+import "./profile.css";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
 export default function Profile() {

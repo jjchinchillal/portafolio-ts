@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import data from "../../data/competencies.json";
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
-import "./SoftSkills.css";
+import "./softSkills.css";
 
 interface SkillItem {
   name: string;
