@@ -12,8 +12,7 @@ import "./contact.css";
 export default function Contact(): JSX.Element {
   return (
     <section id="contact" className="contact">
-      {/* 👇 ESTA es la clave */}
-      <div className="container-main contact-content reveal-active">
+      <div className="container-main contact-content">
 
         <h2 className="contact-title fade-in">
           Contacto

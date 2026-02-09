@@ -1,5 +1,5 @@
 .contact {
-  padding: 0 0 120px 0; /* 👈 sin separación arriba */
+  padding: 0 0 120px 0; /* sin separación arriba */
   display: flex;
   align-items: center;
 }
@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 0 0 90px 0; /* coherente en móvil */
+    padding: 0 0 90px 0;
   }
 
   .contact-icons {
@@ -86,23 +86,21 @@
     flex-wrap: wrap;
   }
 }
+
 /* =====================
-   FADE IN ANIMATION
+   FADE IN ANIMATION ✅
 ===================== */
 
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-}
-
-.reveal-active .fade-in {
   animation: contactFadeIn 0.6s ease forwards;
 }
 
+/* keyframes */
 @keyframes contactFadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
