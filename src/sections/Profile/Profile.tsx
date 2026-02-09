@@ -7,15 +7,17 @@ export default function Profile() {
 
   return (
     <section ref={revealRef} className="profile section-spacing reveal">
-      <div className="container-main profile-wrapper">
-        <h2 className="profile-title">{profile.title}</h2>
+      <div className="container-main">
+        <div className="profile-bubble">
+          <h2 className="profile-title">{profile.title}</h2>
 
-        <div className="profile-content">
-          {profile.summary.map((paragraph, index) => (
-            <p key={index} className="profile-text">
-              {paragraph}
-            </p>
-          ))}
+          <div className="profile-content">
+            {profile.summary.map((paragraph, index) => (
+              <p key={index} className="profile-text">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </section>

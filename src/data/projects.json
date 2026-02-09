@@ -1,9 +1,47 @@
 [
   {
     "name": "Plataforma Instituto Francés",
-    "description": "Plataforma web institucional desarrollada con Vite, TypeScript y Supabase. Despliegue en Vercel.",
+    "description": "Plataforma educativa virtual para la enseñanza del francés basada en el método Cosmopolite y alineada con el MCER. Diseñada para ofrecer una experiencia de aprendizaje dinámica, modular y accesible.",
     "image": "/assets/logos/InstitutoFrances.png",
-    "demo": "",
-    "repo": ""
+"stack": [
+  {
+    "name": "React",
+    "icon": "SiReact",
+    "url": "https://react.dev",
+    "color": "#61DAFB"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "url": "https://www.typescriptlang.org/docs",
+    "color": "#3178C6"
+  },
+  {
+    "name": "Vite",
+    "icon": "SiVite",
+    "url": "https://vitejs.dev/guide",
+    "color": "#646CFF"
+  },
+  {
+    "name": "Supabase",
+    "icon": "SiSupabase",
+    "url": "https://supabase.com/docs",
+    "color": "#3ECF8E"
+  },
+  {
+    "name": "Vercel",
+    "icon": "SiVercel",
+    "url": "https://vercel.com/docs",
+    "color": "#FFFFFF"
+  }
+],
+    "highlights": [
+      "Estructura académica modular A1–B2",
+      "Integración con base de datos en Supabase",
+      "Diseño responsive y accesible",
+      "Arquitectura moderna con Vite"
+    ],
+    "demo": "https://institutofrances.org",
+    "repo": "https://github.com/jjchinchillal/ViveLaFrance.git"
   }
 ]
