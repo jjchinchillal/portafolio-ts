@@ -1,6 +1,6 @@
 import "./hero.css";
 import profileImg from "../../assets/images/Profile.webp";
-import cvPdf from "../../assets/doc/CV.pdf";
+import cvPdf from "../../assets/doc/CV-Juan-Jose-Chinchilla.pdf";
 
 import {
   FaGithub,
