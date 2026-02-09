@@ -1,5 +1,6 @@
 import { JSX } from "react";
 import data from "../../data/competencies.json";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 import "./SoftSkills.css";
 
 interface SkillItem {
@@ -14,8 +15,14 @@ interface SkillCategory {
 }
 
 export default function SoftSkills(): JSX.Element {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section id="softskills" className="competencias section-spacing">
+    <section
+      ref={revealRef}
+      id="softskills"
+      className="competencias section-spacing reveal"
+    >
       <div className="container-main competencias-wrapper">
 
         <h2 className="competencias-title">Competencias</h2>
@@ -44,7 +51,6 @@ export default function SoftSkills(): JSX.Element {
                     <span className="competencia-level">
                       {item.level}
                     </span>
-
                   </span>
                 ))}
               </div>

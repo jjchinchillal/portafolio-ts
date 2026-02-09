@@ -74,9 +74,9 @@
   background: rgba(255, 255, 255, .05);
   color: var(--text-secondary);
   border: 2px solid var(--border-soft);
-  transition: 
-    background .25s ease, 
-    transform .2s ease, 
+  transition:
+    background .25s ease,
+    transform .2s ease,
     border-color .25s ease;
   cursor: default;
 }
@@ -86,10 +86,10 @@
   color: var(--level-color);
 }
 
-
 /* ======================
-   LEVEL LABEL (NUEVO)
+   LEVEL LABEL
 ====================== */
+
 .competencia-level {
   position: absolute;
   top: -8px;
@@ -114,6 +114,28 @@
   transform: scale(1);
 }
 
+/* ======================
+   🔥 REVEAL ANIMATION (IGUAL A STACK)
+====================== */
+
+.reveal-active .competencias-card {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.reveal-active .competencias-card:nth-child(1) { animation-delay: .1s; }
+.reveal-active .competencias-card:nth-child(2) { animation-delay: .2s; }
+.reveal-active .competencias-card:nth-child(3) { animation-delay: .3s; }
+.reveal-active .competencias-card:nth-child(4) { animation-delay: .4s; }
+.reveal-active .competencias-card:nth-child(5) { animation-delay: .5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* ======================
    RESPONSIVE

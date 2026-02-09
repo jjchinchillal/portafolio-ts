@@ -1,10 +1,17 @@
 import * as Icons from "react-icons/si";
 import skills from "../../data/skills.json";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 import "./Skills.css";
 
 export default function Skills() {
+  const revealRef = useRevealOnScroll<HTMLElement>();
+
   return (
-    <section id="skills" className="skills section-spacing">
+    <section
+      ref={revealRef}
+      id="skills"
+      className="skills section-spacing reveal"
+    >
       <div className="container-main skills-wrapper">
 
         <h2 className="skills-title">Skills Técnicos</h2>

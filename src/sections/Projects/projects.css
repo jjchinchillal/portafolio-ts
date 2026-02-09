@@ -139,28 +139,36 @@
 
 .project-btn {
   position: relative;
-
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
-  background: rgba(255,255,255,.03);
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
   border: 1px solid var(--border-soft);
 
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--text-main);
-
   transition: all .25s ease;
+}
+
+.project-btn.primary {
+  background: var(--accent-primary);
+  color: #000;
+  border: none;
 }
 
 .project-btn:hover {
   transform: translateY(-4px);
   color: var(--accent-primary);
   border-color: var(--accent-primary);
+}
+
+.project-btn.primary:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
 }
 
 /* Tooltip */
@@ -186,6 +194,47 @@
   transform: translateX(-50%) translateY(4px);
 }
 
+/* Subtitles */
+.project-subtitle {
+  display: block;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--text-soft);
+}
+
+/* Divider */
+.project-divider {
+  height: 1px;
+  background: var(--border-soft);
+  margin: 28px 0;
+  opacity: .6;
+}
+
+/* ======================
+   🔥 REVEAL ANIMATION (IGUAL A STACK)
+====================== */
+
+.reveal-active .project-card {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeInUp .6s ease forwards;
+}
+
+.reveal-active .project-card:nth-child(1) { animation-delay: .1s; }
+.reveal-active .project-card:nth-child(2) { animation-delay: .2s; }
+.reveal-active .project-card:nth-child(3) { animation-delay: .3s; }
+.reveal-active .project-card:nth-child(4) { animation-delay: .4s; }
+.reveal-active .project-card:nth-child(5) { animation-delay: .5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .project-card {
@@ -207,45 +256,4 @@
   .project-actions {
     justify-content: center;
   }
-}
-/* Subtitles */
-.project-subtitle {
-  display: block;
-  font-size: .75rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  color: var(--text-soft);
-}
-
-/* Divider */
-.project-divider {
-  height: 1px;
-  background: var(--border-soft);
-  margin: 28px 0;
-  opacity: .6;
-}
-
-/* Actions bigger */
-.project-btn {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.04);
-  border: 1px solid var(--border-soft);
-  font-size: 1.25rem;
-  color: var(--text-main);
-  transition: all .25s ease;
-}
-
-.project-btn.primary {
-  background: var(--accent-primary);
-  color: #000;
-  border: none;
-}
-
-.project-btn.primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
 }

@@ -1,13 +1,79 @@
 [
-  { "title": "Desarrollo Backend con JAVA", "institution": "Platzi", "year": 2023, "link": "" },
-  { "title": "Curso Avanzado de Java SE", "institution": "Platzi", "year": 2023, "link": "" },
-  { "title": "Project Management", "institution": "Platzi", "year": 2023, "link": "" },
-  { "title": "Estrategias para Negocios Digitales", "institution": "Platzi", "year": 2023, "link": "" },
-  { "title": "Diplomado en Programación en PHP", "institution": "PHP", "year": 2023, "link": "" },
-  { "title": "CCNAv7 Introducción a Redes", "institution": "CISCO", "year": 2023, "link": "" },
-  { "title": "Seguridad Cibernética", "institution": "CISCO", "year": 2023, "link": "" },
-  { "title": "NDG Linux Unhatched", "institution": "CISCO", "year": 2023, "link": "" },
-  { "title": "Inteligencia Artificial", "institution": "Generación TIC", "year": 2024, "link": "" },
-  { "title": "Flutter Móvil: De Cero a Experto", "institution": "Udemy", "year": 2024, "link": "" },
-  { "title": "Flutter Avanzado", "institution": "Udemy", "year": 2024, "link": "" }
+  {
+    "title": "Desarrollo Backend con JAVA",
+    "institution": "Platzi",
+    "year": 2023,
+    "logo": "/assets/logos/platzi.png",
+    "link": "https://platzi.com"
+  },
+  {
+    "title": "Curso Avanzado de Java SE",
+    "institution": "Platzi",
+    "year": 2023,
+    "logo": "/assets/logos/platzi.png",
+    "link": "https://platzi.com"
+  },
+  {
+    "title": "Project Management",
+    "institution": "Platzi",
+    "year": 2023,
+    "logo": "/assets/logos/platzi.png",
+    "link": "https://platzi.com"
+  },
+  {
+    "title": "Estrategias para Negocios Digitales",
+    "institution": "Platzi",
+    "year": 2023,
+    "logo": "/assets/logos/platzi.png",
+    "link": "https://platzi.com"
+  },
+  {
+    "title": "Diplomado en Programación en PHP",
+    "institution": "PHP",
+    "year": 2023,
+    "logo": "/assets/logos/politecnico.png",
+    "link": "https://politecnicodecolombia.edu.co/"
+  },
+  {
+    "title": "CCNAv7 Introducción a Redes",
+    "institution": "CISCO",
+    "year": 2023,
+    "logo": "/assets/logos/cisco.png",
+    "link": "https://www.cisco.com"
+  },
+  {
+    "title": "Seguridad Cibernética",
+    "institution": "CISCO",
+    "year": 2023,
+    "logo": "/assets/logos/cisco.png",
+    "link": "https://www.cisco.com"
+  },
+  {
+    "title": "NDG Linux Unhatched",
+    "institution": "CISCO",
+    "year": 2023,
+    "logo": "/assets/logos/cisco.png",
+    "link": "https://www.cisco.com"
+  },
+  {
+    "title": "Inteligencia Artificial",
+    "institution": " El MinTIC y la Universidad Distrital Francisco José de Caldas",
+    "year": 2024,
+    "logo": "/assets/logos/mintic.png",
+    "link": "https://www.mintic.gov.co/portal/inicio/"
+  },
+  {
+    "title": "Flutter Móvil: De Cero a Experto",
+    "institution": "Udemy",
+    "year": 2024,
+    "logo": "/assets/logos/udemy.png",
+    "link": "https://www.udemy.com"
+  },
+  {
+    "title": "Flutter Avanzado",
+    "institution": "Udemy",
+    "year": 2024,
+    "logo": "/assets/logos/udemy.png",
+    "link": "https://www.udemy.com"
+  }
 ]
