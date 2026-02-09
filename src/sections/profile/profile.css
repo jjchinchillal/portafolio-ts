@@ -1,45 +1,68 @@
+/* =====================
+   SECTION
+===================== */
+
 .profile {
   background: transparent;
-  display: flex;
-  justify-content: center;
 }
 
-/* Burbuja */
-.profile-bubble {
-  max-width: 900px;
+/* Eje real de la sección */
+.profile-inner {
+  max-width: 1200px; /* usa el mismo ancho del container-main */
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CLAVE: centra hijos */
+}
+
+/* =====================
+   TÍTULO
+===================== */
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 40px;
+
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* =====================
+   BURBUJA
+===================== */
+
+.profile-bubble {
+  width: 100%;
+  max-width: 900px; /* controla el tamaño real */
   padding: 48px;
   border-radius: 28px;
-
   background: var(--bg-card);
   border: 1px solid var(--border-soft);
   backdrop-filter: blur(16px);
 
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-bubble:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
-/* Título centrado */
-.profile-title {
-  text-align: center;
-  font-size: clamp(1.8rem, 3vw, 2.3rem);
-  font-weight: 700;
-  margin-bottom: 32px;
-  color: var(--text-main);
-}
+/* =====================
+   CONTENIDO
+===================== */
 
-/* Contenido */
 .profile-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
-/* Texto */
+
 .profile-text {
   color: var(--text-secondary);
   font-size: 1rem;
@@ -55,10 +78,6 @@
   .profile-bubble {
     padding: 32px;
   }
-
-  .profile-text {
-    font-size: 0.95rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -68,10 +87,5 @@
 
   .profile-title {
     font-size: 1.6rem;
-  }
-
-  .profile-text {
-    font-size: 0.9rem;
-    line-height: 1.7;
   }
 }

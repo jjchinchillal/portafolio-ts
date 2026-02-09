@@ -6,18 +6,24 @@ export default function Profile() {
   const revealRef = useRevealOnScroll<HTMLElement>();
 
   return (
-    <section ref={revealRef} className="profile section-spacing reveal">
+    <section ref={revealRef} className="profile section reveal">
       <div className="container-main">
-        <div className="profile-bubble">
+
+        {/* Wrapper que controla el ancho real */}
+        <div className="profile-inner">
+
           <h2 className="profile-title">{profile.title}</h2>
 
-          <div className="profile-content">
-            {profile.summary.map((paragraph, index) => (
-              <p key={index} className="profile-text">
-                {paragraph}
-              </p>
-            ))}
+          <div className="profile-bubble">
+            <div className="profile-content">
+              {profile.summary.map((paragraph, index) => (
+                <p key={index} className="profile-text">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
+
         </div>
       </div>
     </section>
