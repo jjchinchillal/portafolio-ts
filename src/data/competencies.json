@@ -1,0 +1,31 @@
+[
+  {
+    "category": "Competencias Técnicas",
+    "items": [
+      { "name": "Desarrollo Frontend", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Desarrollo de aplicaciones móviles", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Gestión de proyectos tecnológicos", "level": "Intermedio", "levelColor": "#3178C6" },
+      { "name": "Metodologías ágiles (Scrum)", "level": "Intermedio", "levelColor": "#3178C6" },
+      { "name": "Documentación técnica", "level": "Intermedio", "levelColor": "#3178C6" }
+    ]
+  },
+  {
+    "category": "Habilidades Blandas",
+    "items": [
+      { "name": "Comunicación efectiva", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Trabajo en equipo", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Organización y gestión del tiempo", "level": "Intermedio", "levelColor": "#3178C6" },
+      { "name": "Aprendizaje autónomo y mejora continua", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Liderazgo", "level": "Intermedio", "levelColor": "#3178C6" }
+    ]
+  },
+  {
+    "category": "Otros Conocimientos",
+    "items": [
+      { "name": "Fundamentos de redes", "level": "Avanzado", "levelColor": "#4BB543" },
+      { "name": "Ciberseguridad básica", "level": "Básico", "levelColor": "#6B7280" },
+      { "name": "Control de versiones", "level": "Intermedio", "levelColor": "#3178C6" },
+      { "name": "Buenas prácticas de desarrollo", "level": "Avanzado", "levelColor": "#4BB543" }
+    ]
+  }
+]

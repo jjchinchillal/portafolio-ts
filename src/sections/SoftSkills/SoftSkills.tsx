@@ -1,17 +1,58 @@
-import React from "react";
+import { JSX } from "react";
+import data from "../../data/competencies.json";
+import "./SoftSkills.css";
 
-const softs = ["Trabajo en equipo", "Liderazgo", "Autonomía", "Pensamiento analítico", "Comunicación"];
+interface SkillItem {
+  name: string;
+  level: string;
+  levelColor: string;
+}
+
+interface SkillCategory {
+  category: string;
+  items: SkillItem[];
+}
 
 export default function SoftSkills(): JSX.Element {
   return (
-    <section id="softskills" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Habilidades Blandas</h2>
-        <div className="flex flex-wrap justify-center gap-3">
-          {softs.map((s, i) => (
-            <span key={i} className="px-4 py-2 bg-white/5 text-slate-200 rounded-full">{s}</span>
+    <section id="softskills" className="competencias section-spacing">
+      <div className="container-main competencias-wrapper">
+
+        <h2 className="competencias-title">Competencias</h2>
+        <p className="competencias-subtitle">
+          Competencias técnicas y profesionales aplicadas en el desarrollo
+          de soluciones digitales.
+        </p>
+
+        <div className="competencias-grid">
+          {(data as SkillCategory[]).map((group, index) => (
+            <div key={index} className="competencias-card">
+
+              <h3 className="competencias-subtitle">
+                {group.category}
+              </h3>
+
+              <div className="competencias-list">
+                {group.items.map((item, i) => (
+                  <span
+                    key={i}
+                    className="competencia-badge"
+                    style={{ "--level-color": item.levelColor } as React.CSSProperties}
+                  >
+                    {item.name}
+
+                    <span className="competencia-level">
+                      {item.level}
+                    </span>
+
+                  </span>
+                ))}
+              </div>
+
+            </div>
           ))}
         </div>
+
       </div>
     </section>
   );

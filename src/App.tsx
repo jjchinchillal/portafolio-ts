@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-
+import Skills from "./sections/Skills/Skills";
+import SoftSkills from "./sections/SoftSkills/SoftSkills";
 import Hero from "./sections/Hero/Hero";
 import Profile from "./sections/Profile/Profile";
 import Experience from "./sections/Experience/Experience";
@@ -19,6 +20,8 @@ export default function App() {
         <Profile />
         <Experience />
         <Stack />
+        <Skills />
+        <SoftSkills />
         <Projects />
         <Certifications />
         <Contact />

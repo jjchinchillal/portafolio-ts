@@ -1,25 +1,51 @@
-import React from "react";
+import * as Icons from "react-icons/si";
 import skills from "../../data/skills.json";
+import "./Skills.css";
 
-export default function Skills(): JSX.Element {
+export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Skills Técnicos</h2>
+    <section id="skills" className="skills section-spacing">
+      <div className="container-main skills-wrapper">
 
-        <div className="space-y-6">
-          {skills.map((s: any, i: number) => (
-            <div key={i}>
-              <div className="flex justify-between mb-1">
-                <span className="text-slate-200">{s.name}</span>
-                <span className="text-slate-400 text-sm">{s.level}%</span>
+        <h2 className="skills-title">Skills Técnicos</h2>
+        <p className="skills-subtitle">
+          Tecnologías base utilizadas en mis proyectos.
+        </p>
+
+        <div className="skills-list">
+          {skills.map((skill: any, index: number) => {
+            const IconComponent = (Icons as any)[skill.icon];
+
+            return (
+              <div key={index} className="skill-card">
+
+                <div className="skill-header">
+                  <div className="skill-info">
+                    {IconComponent && (
+                      <IconComponent
+                        className="skill-icon"
+                        style={{ color: skill.color }}
+                      />
+                    )}
+                    <span className="skill-name">{skill.name}</span>
+                  </div>
+                </div>
+
+                <div className="skill-bar">
+                  <div
+                    className="skill-progress"
+                    style={{
+                      width: `${skill.level}%`,
+                      backgroundColor: skill.color
+                    }}
+                  />
+                </div>
+
               </div>
-              <div className="w-full bg-white/5 h-3 rounded-full">
-                <div className="h-3 rounded-full bg-cyan-400" style={{ width: `${s.level}%` }} />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
