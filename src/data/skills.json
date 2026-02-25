@@ -1,61 +1,61 @@
 [
   {
     "name": "React",
-    "level": 90,
+    "level": 65,
     "icon": "SiReact",
     "color": "#61DAFB"
   },
   {
     "name": "TypeScript",
-    "level": 88,
+    "level": 63,
     "icon": "SiTypescript",
     "color": "#3178C6"
   },
   {
     "name": "JavaScript",
-    "level": 85,
+    "level": 68,
     "icon": "SiJavascript",
     "color": "#F7DF1E"
   },
   {
     "name": "Node.js",
-    "level": 82,
+    "level": 58,
     "icon": "SiNodedotjs",
     "color": "#339933"
   },
   {
     "name": "Flutter",
-    "level": 94,
+    "level": 72,
     "icon": "SiFlutter",
     "color": "#02569B"
   },
   {
     "name": "Dart",
-    "level": 92,
+    "level": 70,
     "icon": "SiDart",
     "color": "#0175C2"
   },
    {
     "name": "Vite",
-    "level": 85,
+    "level": 60,
     "icon": "SiVite",
     "color": "#646CFF"
   },
   {
     "name": "Supabase",
-    "level": 80,
+    "level": 57,
     "icon": "SiSupabase",
     "color": "#3ECF8E"
   },
   {
     "name": "Vercel",
-    "level": 85,
+    "level": 59,
     "icon": "SiVercel",
     "color": "#FFFFFF"
   },
   {
     "name": "Git",
-    "level": 83,
+    "level": 66,
     "icon": "SiGit",
     "color": "#F05032"
   }
