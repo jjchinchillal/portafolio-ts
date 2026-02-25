@@ -6,14 +6,13 @@
   background: transparent;
 }
 
-/* Eje real de la sección */
 .profile-inner {
-  max-width: 1200px; /* usa el mismo ancho del container-main */
+  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* CLAVE: centra hijos */
+  align-items: center; 
 }
 
 /* =====================
@@ -35,7 +34,7 @@
 
 .profile-bubble {
   width: 100%;
-  max-width: 900px; /* controla el tamaño real */
+  max-width: 900px; 
   padding: 48px;
   border-radius: 28px;
   background: var(--bg-card);

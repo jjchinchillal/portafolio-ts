@@ -44,11 +44,11 @@
 }
 
 /* ======================
-   LOGO (REDUCIDO + SUAVE)
+   LOGO
 ====================== */
 
 .certification-logo {
-  max-width: 96px;     /* ⬅️ reducido */
+  max-width: 96px;     
   max-height: 96px;
   width: auto;
   height: auto;

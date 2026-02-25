@@ -1,5 +1,5 @@
 .contact {
-  padding: 0 0 120px 0; /* sin separación arriba */
+  padding: 0 0 120px 0;
   display: flex;
   align-items: center;
 }
@@ -88,7 +88,7 @@
 }
 
 /* =====================
-   FADE IN ANIMATION ✅
+   FADE IN ANIMATION
 ===================== */
 
 .fade-in {

@@ -1,4 +1,4 @@
-/* ===== REVEAL BASE ===== */
+/*REVEAL BASE*/
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -12,7 +12,7 @@
 }
 
 
-/* micro animación (solo hero) */
+/* micro animación (solo en el hero) */
 @keyframes floatY {
   0% { transform: translateY(0); }
   50% { transform: translateY(-6px); }

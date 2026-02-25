@@ -37,7 +37,6 @@ export default function Navbar(): JSX.Element {
         </nav>
 
         <div className="md:hidden">
-          {/* simple mobile placeholder (can expand) */}
           <button className="px-3 py-1 rounded-md bg-white/5">Menu</button>
         </div>
       </div>

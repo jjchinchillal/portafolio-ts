@@ -114,9 +114,6 @@
   transform: scale(1);
 }
 
-/* ======================
-   🔥 REVEAL ANIMATION (IGUAL A STACK)
-====================== */
 
 .reveal-active .competencias-card {
   opacity: 0;

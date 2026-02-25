@@ -49,7 +49,7 @@
 .stack-icon {
   position: relative;
   font-size: 2.1rem;
-  color: var(--text-main); /* Blanco por defecto */
+  color: var(--text-main);
   transition: transform .25s ease, color .25s ease;
 }
 
