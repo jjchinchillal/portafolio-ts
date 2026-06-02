@@ -22,7 +22,9 @@ export default function Certifications(): JSX.Element {
                 className="certification-logo"
               />
 
-              <h3 className="certification-title">{c.title}</h3>
+              <h3 className="certification-title">
+                {c.title}
+              </h3>
 
               <span className="certification-tooltip">
                 {c.institution} · {c.year}
