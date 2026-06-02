@@ -10,10 +10,12 @@ import Stack from "./sections/stack/stack";
 import Projects from "./sections/projects/projects";
 import Certifications from "./sections/certifications/certifications";
 import Contact from "./sections/contact/contact";
+import TextechBackground from "./components/ui/TechBackground";
 
 export default function App() {
   return (
     <div className="min-h-screen">
+      <TextechBackground />
 
       <main className="main-layout">
 

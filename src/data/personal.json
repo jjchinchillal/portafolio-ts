@@ -1,18 +1,23 @@
 {
   "name": "Juan José Chinchilla Lanziano",
-  "role": "Ingeniero de Sistemas · Frontend & Mobile Developer",
-  "tagline": "Ingeniero de Sistemas con enfoque en Frontend y desarrollo móvil. Me especializo en crear aplicaciones escalables y con excelente experiencia de usuario.",
+  "role": "Frontend & Mobile Developer · Ingeniero de Sistemas",
+  "tagline": "Construyo interfaces y aplicaciones móviles centradas en la experiencia del usuario, con foco en rendimiento, escalabilidad y código limpio.",
   "email": "jchinchilla1204@gmail.com",
   "phone": "3117759027",
-  "location": "Ocaña, Norte de Santander – Colombia",
+  "location": "Bogotá D.C., Colombia",
   "linkedin": "https://linkedin.com/in/juan-jose-chinchilla-lanziano-939328283",
   "github": "https://github.com/jjchinchillal",
   "whatsapp": "https://wa.me/573117759027",
   "title": "Perfil Profesional",
   "summary": [
-    "Ingeniero de Sistemas de la Universidad Francisco de Paula Santander, sede Ocaña, con estudios culminados, pasantías finalizadas y sustentadas, actualmente a la espera de fecha de grado.",
-    "Desarrollador especializado en Frontend y desarrollo móvil, con experiencia en el diseño, creación, modernización y mantenimiento de plataformas web y aplicaciones móviles orientadas a la experiencia del usuario. He participado activamente en proyectos de desarrollo utilizando tecnologías modernas, aplicando buenas prácticas de codificación y diseño responsivo.",
-    "Cuento con conocimientos en gestión de proyectos tecnológicos y metodologías ágiles (Scrum), habiendo liderado la coordinación técnica de proyectos. Complemento mi perfil con habilidades en comunicación, trabajo en equipo, atención al cliente y un enfoque constante en la mejora continua y el aprendizaje autónomo."
-  ]
-
+    "Ingeniero de Sistemas egresado de la Universidad Francisco de Paula Santander Ocaña (Promoción 2026), con más de 2 años de experiencia construyendo aplicaciones web y móviles de alto rendimiento en entornos reales de producción.",
+    "Especializado en React, Next.js, TypeScript y Flutter, con participación en todo el ciclo de desarrollo: desde el diseño de arquitectura y la definición de requerimientos hasta el despliegue y mantenimiento en producción. He trabajado en paralelo en roles empresariales y proyectos independientes, lo que ha fortalecido mi capacidad de gestión técnica autónoma, toma de decisiones y orientación a resultados.",
+    "Con experiencia en equipos ágiles (Scrum), construcción de componentes reutilizables, integraciones backend con Node.js y Supabase, y desarrollo móvil multiplataforma con Flutter. Me impulsa el aprendizaje continuo, el código bien escrito y crear productos que resuelvan problemas reales para las personas."
+  ],
+  "highlights": [
+    "2+ años de experiencia en desarrollo profesional en empresas y proyectos independientes simultáneos",
+    "Stack completo: React · Next.js · TypeScript · Flutter · Node.js · Supabase · PostgreSQL",
+    "Experiencia en todo el ciclo: arquitectura → desarrollo → despliegue → mantenimiento",
+    "Proyectos propios en producción: portafolio, plataforma cultural y generador de CV con IA",
+    "Inglés técnico: lectura de documentación, Stack Overflow y repositorios en GitHub"  ]
 }

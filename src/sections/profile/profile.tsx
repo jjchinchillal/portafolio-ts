@@ -8,13 +8,13 @@ export default function Profile() {
   return (
     <section ref={revealRef} className="profile section reveal">
       <div className="container-main">
-
-        {/* Wrapper que controla el ancho real */}
         <div className="profile-inner">
 
           <h2 className="profile-title">{profile.title}</h2>
 
           <div className="profile-bubble">
+
+            {/* Párrafos del summary */}
             <div className="profile-content">
               {profile.summary.map((paragraph, index) => (
                 <p key={index} className="profile-text">
@@ -22,8 +22,21 @@ export default function Profile() {
                 </p>
               ))}
             </div>
-          </div>
 
+            {/* Divider */}
+            <div className="profile-divider" />
+
+            {/* Highlights */}
+            <ul className="profile-highlights">
+              {profile.highlights.map((item, index) => (
+                <li key={index} className="profile-highlight-item">
+                  <span className="profile-highlight-dot" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+          </div>
         </div>
       </div>
     </section>

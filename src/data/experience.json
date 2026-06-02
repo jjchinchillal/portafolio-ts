@@ -33,7 +33,7 @@
   {
     "company": "Proyecto Instituto Francés",
     "role": "Desarrollador de Software & Gestor de Proyecto",
-    "period": "Abril 2025 – Actualidad",
+    "period": "Abril 2025 – Mayo 2026 (En paralelo con empleo en Grupo Nagal)",
     "tasks": [
       "Desarrollo de plataforma web institucional para oferta de servicios de aprendizaje de idiomas.",
       "Implementación de interfaces modernas y responsivas enfocadas en UX.",
@@ -43,7 +43,7 @@
       "Coordinación del desarrollo inicial del aplicativo móvil (en construcción).",
       "Gestión del proyecto bajo metodologías ágiles con enfoque en escalabilidad."
     ],
-    "website": "https://www.institutofrances.org/",
+    "website": "https://test-institutofrances.vercel.app/inicio",
     "instagram": "https://www.instagram.com/institutofrances"
   }
 ]

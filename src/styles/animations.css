@@ -16,7 +16,7 @@
 
 
 /* ========================= 
-   MICRO ANIMACIÓN (solo hero) 
+   MICRO ANIMACIÓN (solo hero)
 ========================= */
 
 @keyframes floatY {
@@ -30,6 +30,7 @@
 }
 
 
+
 @keyframes bgShift {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
@@ -38,7 +39,7 @@
 
 
 /* ========================= 
-   ACCESIBILIDAD 
+   ACCESIBILIDAD
 ========================= */
 
 @media (prefers-reduced-motion: reduce) {
@@ -51,5 +52,9 @@
 
   .float-y {
     animation: none;
+  }
+
+  canvas[aria-hidden="true"] {
+    display: none;
   }
 }
