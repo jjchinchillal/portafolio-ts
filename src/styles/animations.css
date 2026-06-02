@@ -1,21 +1,27 @@
-/*REVEAL BASE*/
+/* ========================= 
+   REVEAL BASE 
+========================= */
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
 }
 
-/* cuando entra en viewport */
 .reveal.reveal-active {
   opacity: 1;
   transform: translateY(0);
 }
 
 
-/* micro animación (solo en el hero) */
+/* ========================= 
+   MICRO ANIMACIÓN (solo hero) 
+========================= */
+
 @keyframes floatY {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
 
@@ -23,19 +29,24 @@
   animation: floatY 4s ease-in-out infinite;
 }
 
+
 @keyframes bgShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
 
-/* accesibilidad */
+/* ========================= 
+   ACCESIBILIDAD 
+========================= */
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
     transition: none;
+    will-change: auto;
   }
 
   .float-y {
