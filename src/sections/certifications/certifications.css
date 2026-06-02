@@ -2,6 +2,10 @@
   background: transparent;
 }
 
+/* ======================
+   TITLE
+====================== */
+
 .certifications-title {
   text-align: center;
   font-size: clamp(1.8rem, 3vw, 2.3rem);
@@ -10,6 +14,10 @@
   color: var(--text-main);
 }
 
+/* ======================
+   GRID
+====================== */
+
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -17,15 +25,22 @@
 }
 
 /* ======================
-   CARD
+   CARD (MEJORADO)
 ====================== */
 
 .certification-card {
   position: relative;
-  padding: 24px;
-  border-radius: 18px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-soft);
+  padding: 26px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 
   display: flex;
   flex-direction: column;
@@ -33,34 +48,41 @@
   align-items: center;
   text-align: center;
 
-  transition: 
-    transform .25s ease,
-    box-shadow .25s ease;
+  min-height: 220px;
+
+  transition: transform .25s ease, box-shadow .25s ease, border .25s ease;
 }
 
 .certification-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px) scale(1.02);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* ======================
-   LOGO
+   LOGO (CUADRADO PERFECTO)
 ====================== */
 
 .certification-logo {
-  max-width: 96px;     
-  max-height: 96px;
-  width: auto;
-  height: auto;
-  margin-bottom: 16px;
-  border-radius: 14px;
+  width: 96px;
+  height: 96px;
 
-  transition: transform .25s ease, opacity .25s ease;
+  object-fit: contain;
+  background: #ffffff;
+
+  border-radius: 16px;
+  padding: 10px;
+
+  display: block;
+  margin-bottom: 16px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform .25s ease, filter .25s ease;
 }
 
 .certification-card:hover .certification-logo {
-  transform: scale(1.05);
-  opacity: .95;
+  transform: scale(1.08) rotate(1deg);
+  filter: brightness(1.05);
 }
 
 /* ======================
@@ -68,14 +90,15 @@
 ====================== */
 
 .certification-title {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--text-main);
 }
 
 .certification-tooltip {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
+  opacity: 0.75;
   color: var(--text-soft);
 }
 
@@ -85,21 +108,22 @@
 
 @media (max-width: 768px) {
   .certification-logo {
-    max-width: 88px;
-    max-height: 88px;
+    width: 88px;
+    height: 88px;
   }
 }
 
 @media (max-width: 480px) {
   .certification-logo {
-    max-width: 72px;
-    max-height: 72px;
+    width: 72px;
+    height: 72px;
   }
 
   .certification-title {
     font-size: 0.95rem;
   }
 }
+
 /* ======================
    REVEAL ANIMATION
 ====================== */

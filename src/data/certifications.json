@@ -75,5 +75,12 @@
     "year": 2024,
     "logo": "/assets/logos/udemy.png",
     "link": "https://www.udemy.com"
+  },
+  {
+    "title": "Atención al cliente (Nivel avanzado)",
+    "institution": "SENA",
+    "year": 2025,
+    "logo": "/assets/logos/sena.png",
+    "link": "https://www.sena.edu.co"
   }
 ]

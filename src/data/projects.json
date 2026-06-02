@@ -3,38 +3,38 @@
     "name": "Plataforma Instituto Francés",
     "description": "Plataforma educativa virtual para la enseñanza del francés basada en el método Cosmopolite y alineada con el MCER. Diseñada para ofrecer una experiencia de aprendizaje dinámica, modular y accesible.",
     "image": "/assets/logos/InstitutoFrances.png",
-"stack": [
-  {
-    "name": "React",
-    "icon": "SiReact",
-    "url": "https://react.dev",
-    "color": "#61DAFB"
-  },
-  {
-    "name": "TypeScript",
-    "icon": "SiTypescript",
-    "url": "https://www.typescriptlang.org/docs",
-    "color": "#3178C6"
-  },
-  {
-    "name": "Vite",
-    "icon": "SiVite",
-    "url": "https://vitejs.dev/guide",
-    "color": "#646CFF"
-  },
-  {
-    "name": "Supabase",
-    "icon": "SiSupabase",
-    "url": "https://supabase.com/docs",
-    "color": "#3ECF8E"
-  },
-  {
-    "name": "Vercel",
-    "icon": "SiVercel",
-    "url": "https://vercel.com/docs",
-    "color": "#FFFFFF"
-  }
-],
+    "stack": [
+      {
+        "name": "React",
+        "icon": "SiReact",
+        "url": "https://react.dev",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org/docs",
+        "color": "#3178C6"
+      },
+      {
+        "name": "Vite",
+        "icon": "SiVite",
+        "url": "https://vitejs.dev/guide",
+        "color": "#646CFF"
+      },
+      {
+        "name": "Supabase",
+        "icon": "SiSupabase",
+        "url": "https://supabase.com/docs",
+        "color": "#3ECF8E"
+      },
+      {
+        "name": "Vercel",
+        "icon": "SiVercel",
+        "url": "https://vercel.com/docs",
+        "color": "#FFFFFF"
+      }
+    ],
     "highlights": [
       "Estructura académica modular A1–B2",
       "Integración con base de datos en Supabase",
@@ -43,5 +43,126 @@
     ],
     "demo": "https://institutofrances.org",
     "repo": "https://github.com/jjchinchillal/ViveLaFrance.git"
+  },
+
+  {
+    "name": "A Mi Tierra",
+    "description": "Plataforma digital para la preservación y difusión del patrimonio musical regional, enfocada en comunidades locales y organización de contenido cultural.",
+    "image": "/assets/logos/ami-tierra.jpeg",
+    "stack": [
+      {
+        "name": "Next.js",
+        "icon": "SiNextdotjs",
+        "url": "https://nextjs.org/docs",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Supabase",
+        "icon": "SiSupabase",
+        "url": "https://supabase.com/docs",
+        "color": "#3ECF8E"
+      },
+      {
+        "name": "Node.js",
+        "icon": "SiNodedotjs",
+        "url": "https://nodejs.org/en/docs",
+        "color": "#339933"
+      },
+      {
+        "name": "Vercel",
+        "icon": "SiVercel",
+        "url": "https://vercel.com/docs",
+        "color": "#FFFFFF"
+      }
+    ],
+    "highlights": [
+      "Arquitectura escalable con Next.js",
+      "Gestión de contenido cultural",
+      "Optimización para SEO",
+      "Despliegue en Vercel"
+    ],
+    "demo": "https://ami-tierra.vercel.app",
+    "repo": "https://github.com/jjchinchillal/a-mi-tierra.git"
+  },
+
+  {
+    "name": "Portafolio Web Profesional",
+    "description": "Plataforma personal para presentación de experiencia, habilidades técnicas y proyectos destacados con diseño moderno y responsivo.",
+    "image": "/assets/logos/portafolio.png",
+    "stack": [
+      {
+        "name": "Vite",
+        "icon": "SiVite",
+        "url": "https://vitejs.dev/guide",
+        "color": "#646CFF"
+      },
+      {
+        "name": "React",
+        "icon": "SiReact",
+        "url": "https://react.dev",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Supabase",
+        "icon": "SiSupabase",
+        "url": "https://supabase.com/docs",
+        "color": "#3ECF8E"
+      },
+      {
+        "name": "Vercel",
+        "icon": "SiVercel",
+        "url": "https://vercel.com/docs",
+        "color": "#FFFFFF"
+      }
+    ],
+    "highlights": [
+      "Diseño responsivo moderno",
+      "Contenido dinámico",
+      "Optimización de performance",
+      "Despliegue continuo en Vercel"
+    ],
+    "demo": "https://portafolio-ts-juanjosechinchillalan.vercel.app/",
+    "repo": "https://github.com/jjchinchillal/portafolio-ts.git"
+  },
+
+  {
+    "name": "Generador Inteligente de CV",
+    "description": "Herramienta SaaS en desarrollo para la generación automatizada de hojas de vida optimizadas para ATS, con personalización dinámica y exportación profesional.",
+    "image": "/assets/logos/cv-generator.jpg",
+    "stack": [
+      {
+        "name": "Next.js",
+        "icon": "SiNextdotjs",
+        "url": "https://nextjs.org/docs",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Supabase",
+        "icon": "SiSupabase",
+        "url": "https://supabase.com/docs",
+        "color": "#3ECF8E"
+      },
+      {
+        "name": "Node.js",
+        "icon": "SiNodedotjs",
+        "url": "https://nodejs.org/en/docs",
+        "color": "#339933"
+      },
+      {
+        "name": "Vercel",
+        "icon": "SiVercel",
+        "url": "https://vercel.com/docs",
+        "color": "#FFFFFF"
+      }
+    ],
+    "highlights": [
+      "Generación automática de CV optimizados para ATS",
+      "Personalización dinámica de contenido profesional",
+      "Arquitectura SaaS en desarrollo",
+      "Base funcional implementada con avances reales"
+    ],
+    "status": "En desarrollo (con avances reales)",
+    "demo": "",
+    "repo": "https://github.com/jjchinchillal/cv-builder-pro.git"
   }
 ]

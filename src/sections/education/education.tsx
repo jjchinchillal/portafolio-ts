@@ -9,11 +9,7 @@ export default function Education() {
   const revealRef = useRevealOnScroll<HTMLElement>();
 
   return (
-    <section
-      ref={revealRef}
-      id="education"
-      className="edu-section reveal"
-    >
+    <section ref={revealRef} id="education" className="edu-section reveal">
       <div className="edu-container">
         <div className="edu-card">
 
@@ -30,29 +26,28 @@ export default function Education() {
                 <div className="edu-dot" />
 
                 <div className="edu-content">
-                  <h3>{e.degree}</h3>
+
+                  <h3 className="edu-degree">
+                    {e.degree}
+                  </h3>
 
                   <p className="edu-institution">
                     {e.institution}
                   </p>
 
-                  {e.status && (
-                    <p className="edu-note">
-                      Estado: {e.status}
-                    </p>
-                  )}
+                  <div className="edu-meta">
+                    {e.status && (
+                      <span className="edu-status">
+                        {e.status}
+                      </span>
+                    )}
 
-                  {e.internships && (
-                    <p className="edu-note">
-                      Pasantías: {e.internships}
-                    </p>
-                  )}
-
-                  {e.currentState && (
-                    <p className="edu-note">
-                      Estado actual: {e.currentState}
-                    </p>
-                  )}
+                    {e.period && (
+                      <span className="edu-period">
+                        Promoción {e.period}
+                      </span>
+                    )}
+                  </div>
 
                   {e.note && (
                     <p className="edu-note">
@@ -60,11 +55,6 @@ export default function Education() {
                     </p>
                   )}
 
-                  {e.period && (
-                    <span className="edu-period">
-                      {e.period}
-                    </span>
-                  )}
                 </div>
 
               </div>

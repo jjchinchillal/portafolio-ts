@@ -24,7 +24,10 @@ export default function Skills() {
             const IconComponent = (Icons as any)[skill.icon];
 
             return (
-              <div key={index} className="skill-card">
+              <div key={index} className="skill-card" style={{
+              "--skill-color": skill.color,
+              "--skill-level": `${skill.level}%`
+            } as React.CSSProperties}>
 
                 <div className="skill-header">
                   <div className="skill-info">
