@@ -27,49 +27,76 @@ export default function PersonalInfo() {
 
           <h2 className="profile-title">
             <FaUser />
-            Información
+            Información Personal
           </h2>
 
           <div className="profile-grid">
 
             <div className="profile-item">
-              <FaUser />
-              <span>{personal.name}</span>
-            </div>
-
-            <div className="profile-item">
               <FaMapMarkerAlt />
-              <span>{personal.location}</span>
+              <div className="profile-content">
+                <span className="profile-label">
+                  Ubicación
+                </span>
+
+                <p>{personal.location}</p>
+              </div>
             </div>
 
             <div className="profile-item">
               <FaEnvelope />
-              <span>{personal.email}</span>
+              <div className="profile-content">
+                <span className="profile-label">
+                  Correo Electrónico
+                </span>
+
+                <p>{personal.email}</p>
+              </div>
             </div>
 
             <div className="profile-item">
               <FaPhone />
-              <span>{personal.phone}</span>
+              <div className="profile-content">
+                <span className="profile-label">
+                  Teléfono
+                </span>
+
+                <p>{personal.phone}</p>
+              </div>
             </div>
 
             <a
-              className="profile-item profile-link"
+              className="profile-item profile-link linkedin"
               href={personal.linkedin}
               target="_blank"
               rel="noreferrer"
             >
               <FaLinkedin />
-              <span>LinkedIn</span>
+
+              <div className="profile-content">
+                <span className="profile-label">
+                  LinkedIn
+                </span>
+
+                <p>Ver perfil profesional</p>
+              </div>
             </a>
 
             <a
-              className="profile-item profile-link"
+              className="profile-item profile-link github"
               href={personal.github}
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
-              <span>GitHub</span>
+
+              <div className="profile-content">
+                <span className="profile-label">
+                  GitHub
+                </span>
+
+                <p>Ver repositorios</p>
+              </div>
             </a>
 
           </div>

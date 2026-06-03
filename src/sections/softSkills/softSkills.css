@@ -2,111 +2,122 @@
   background: transparent;
 }
 
-.competencias-wrapper {
-  max-width: 1000px;
+/* HEADER FUERA DE CARDS */
+.competencias-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* ======================
-   TITULOS
-====================== */
-
 .competencias-title {
-  text-align: center;
-  font-size: clamp(1.8rem, 3vw, 2.3rem);
-  font-weight: 700;
-  margin-bottom: 50px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 800;
   color: var(--text-main);
+  letter-spacing: -0.5px;
 }
 
 .competencias-subtitle {
+  margin-top: 10px;
   font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: var(--text-main);
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-inline: auto;
+  line-height: 1.6;
 }
 
-/* ======================
-   GRID
-====================== */
-
+/* GRID LIMPIO */
 .competencias-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
 }
 
-/* ======================
-   CARD
-====================== */
-
+/* CARD MINIMALISTA */
 .competencias-card {
-  padding: 28px;
-  border-radius: 18px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-soft);
-  transition: transform .25s ease, box-shadow .25s ease;
+  padding: 22px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all .25s ease;
+  backdrop-filter: blur(10px);
 }
 
 .competencias-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+  border-color: rgba(221, 35, 67, 0.3);
 }
 
-/* ======================
-   LISTA
-====================== */
+/* CATEGORY TITLE */
+.competencias-category {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-main);
+  position: relative;
+  padding-left: 10px;
+}
 
+.competencias-category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: 16px;
+  border-radius: 2px;
+  background: var(--accent-primary);
+}
+
+/* LISTA FLEX LIMPIA */
 .competencias-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
-/* ======================
-   BADGES
-====================== */
-
+/* BADGES MODERNOS */
 .competencia-badge {
   position: relative;
-  padding: 8px 14px;
-  font-size: 0.85rem;
+
+  padding: 7px 12px;
+  font-size: 0.82rem;
+
   border-radius: 999px;
-  background: rgba(255, 255, 255, .05);
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
   color: var(--text-secondary);
-  border: 2px solid var(--border-soft);
-  transition:
-    background .25s ease,
-    transform .2s ease,
-    border-color .25s ease;
+
+  transition: all .2s ease;
   cursor: default;
 }
 
 .competencia-badge:hover {
   border-color: var(--level-color);
   color: var(--level-color);
+  transform: translateY(-2px);
 }
 
-/* ======================
-   LEVEL LABEL
-====================== */
-
+/* LEVEL MINI TAG */
 .competencia-level {
   position: absolute;
   top: -8px;
   right: -8px;
+
   font-size: 0.65rem;
-  padding: 3px 8px;
+  padding: 2px 6px;
+
   border-radius: 999px;
-  font-weight: 500;
-  white-space: nowrap;
 
   background: var(--level-color);
   color: #fff;
 
   opacity: 0;
-  transform: scale(.8);
-  pointer-events: none;
-  transition: opacity .25s ease, transform .25s ease;
+  transform: scale(0.8);
+
+  transition: all .2s ease;
 }
 
 .competencia-badge:hover .competencia-level {
@@ -114,18 +125,16 @@
   transform: scale(1);
 }
 
-
+/* ANIMACION SUAVE */
 .reveal-active .competencias-card {
   opacity: 0;
-  transform: translateY(16px);
-  animation: fadeInUp .6s ease forwards;
+  transform: translateY(14px);
+  animation: fadeInUp .5s ease forwards;
 }
 
 .reveal-active .competencias-card:nth-child(1) { animation-delay: .1s; }
 .reveal-active .competencias-card:nth-child(2) { animation-delay: .2s; }
 .reveal-active .competencias-card:nth-child(3) { animation-delay: .3s; }
-.reveal-active .competencias-card:nth-child(4) { animation-delay: .4s; }
-.reveal-active .competencias-card:nth-child(5) { animation-delay: .5s; }
 
 @keyframes fadeInUp {
   to {
@@ -134,27 +143,9 @@
   }
 }
 
-/* ======================
-   RESPONSIVE
-====================== */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .competencias-title {
-    margin-bottom: 35px;
-  }
-
-  .competencias-card {
-    padding: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .competencias-title {
-    font-size: 1.6rem;
-  }
-
-  .competencia-badge {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    font-size: 1.9rem;
   }
 }

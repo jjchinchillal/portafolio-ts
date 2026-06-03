@@ -15,7 +15,10 @@ export default function Stack() {
         <div className="stack-grid">
           {stack.map((group, index) => (
             <div key={index} className="stack-card">
-              <h3 className="stack-card-title">{group.category}</h3>
+              <h3 className="stack-card-title"
+              style={{"--category-color": group.color} as React.CSSProperties}>
+                {group.category}
+              </h3>
 
               <div className="stack-icons">
                 {group.items.map((tech, idx) => {

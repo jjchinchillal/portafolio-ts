@@ -23,19 +23,22 @@ export default function SoftSkills(): JSX.Element {
       id="softskills"
       className="competencias section-spacing reveal"
     >
-      <div className="container-main competencias-wrapper">
+      <div className="container-main">
 
-        <h2 className="competencias-title">Competencias</h2>
-        <p className="competencias-subtitle">
-          Competencias técnicas y profesionales aplicadas en el desarrollo
-          de soluciones digitales.
-        </p>
+        {/* TITULO FUERA DEL CONTENEDOR */}
+        <div className="competencias-header">
+          <h2 className="competencias-title">Competencias</h2>
+          <p className="competencias-subtitle">
+            Habilidades técnicas y profesionales aplicadas en desarrollo de software moderno.
+          </p>
+        </div>
 
+        {/* GRID */}
         <div className="competencias-grid">
           {(data as SkillCategory[]).map((group, index) => (
             <div key={index} className="competencias-card">
 
-              <h3 className="competencias-subtitle">
+              <h3 className="competencias-category">
                 {group.category}
               </h3>
 
@@ -47,10 +50,7 @@ export default function SoftSkills(): JSX.Element {
                     style={{ "--level-color": item.levelColor } as React.CSSProperties}
                   >
                     {item.name}
-
-                    <span className="competencia-level">
-                      {item.level}
-                    </span>
+                    <span className="competencia-level">{item.level}</span>
                   </span>
                 ))}
               </div>

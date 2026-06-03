@@ -44,7 +44,7 @@ export default function Education() {
 
                     {e.period && (
                       <span className="edu-period">
-                        Promoción {e.period}
+                        {e.period}
                       </span>
                     )}
                   </div>

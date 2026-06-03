@@ -18,24 +18,58 @@ export default function Experience() {
   const revealRef = useRevealOnScroll<HTMLElement>();
 
   return (
-    <section ref={revealRef} className="experience section-spacing reveal">
+    <section
+      ref={revealRef}
+      className="experience section-spacing reveal"
+      id="experience"
+    >
       <div className="container-main">
 
-        <h2 className="experience-title">Experiencia Profesional</h2>
+        <h2 className="experience-title">
+          Experiencia Profesional
+        </h2>
 
         <div className="experience-grid">
           {experience.map((job, index) => (
-            <article key={index} className="experience-card">
-
+            <article
+              key={index}
+              className="experience-card"
+              style={
+                {
+                  "--company-color": job.color,
+                } as React.CSSProperties
+              }
+            >
               <div className="experience-logo">
-                <img src={logos[job.company]} alt={job.company} />
+                <img
+                  src={logos[job.company]}
+                  alt={job.company}
+                />
               </div>
 
               <div className="experience-info">
-                <h3 className="experience-company">{job.company}</h3>
-                <p className="experience-role">
-                  {job.role} · {job.period}
-                </p>
+
+                <div className="experience-header">
+                  <h3 className="experience-company">
+                    {job.company}
+                  </h3>
+
+                  <p className="experience-role">
+                    {job.role}
+                  </p>
+
+                  <span className="experience-period">
+                    {job.period}
+                  </span>
+                </div>
+
+                <div className="experience-techs">
+                  {job.techs?.map((tech, idx) => (
+                    <span key={idx} className="tech-badge">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
                 <ul className="experience-tasks">
                   {job.tasks.map((task, idx) => (
@@ -44,16 +78,26 @@ export default function Experience() {
                 </ul>
 
                 <div className="experience-links">
-                  <a href={job.website} target="_blank" rel="noreferrer">
-                    <FaGlobe /> Sitio web
+                  <a
+                    href={job.website}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGlobe />
+                    Sitio Web
                   </a>
 
-                  <a href={job.instagram} target="_blank" rel="noreferrer">
-                    <FaInstagram /> Instagram
+                  <a
+                    href={job.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaInstagram />
+                    Instagram
                   </a>
                 </div>
-              </div>
 
+              </div>
             </article>
           ))}
         </div>

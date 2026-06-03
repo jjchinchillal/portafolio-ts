@@ -11,67 +11,54 @@ import "./contact.css";
 
 export default function Contact(): JSX.Element {
   return (
-    <section id="contact" className="contact">
-      <div className="container-main contact-content">
+    <footer id="contact" className="footer-contact">
 
-        <h2 className="contact-title fade-in">
-          Contacto
-        </h2>
+      <div className="container-main footer-inner">
 
-        <p
-          className="contact-subtitle fade-in"
-          style={{ animationDelay: "120ms" }}
-        >
-          ¿Tienes un proyecto o una vacante? Hablemos.
-        </p>
+        {/* LEFT */}
+        <div className="footer-left">
+          <h2 className="footer-title">
+            Conectemos
+          </h2>
 
-        <div
-          className="contact-icons fade-in"
-          style={{ animationDelay: "240ms" }}
-        >
-          <a
-            href={`mailto:${personal.email}`}
-            aria-label="Enviar correo"
-          >
+          <p className="footer-text">
+            ¿Tienes una idea, proyecto o vacante? Estoy disponible para colaborar
+            en productos digitales modernos.
+          </p>
+
+          <span className="footer-email">
+            {personal.email}
+          </span>
+        </div>
+
+        {/* RIGHT */}
+        <div className="footer-right">
+
+          <a href={`mailto:${personal.email}`} aria-label="Email">
             <FaEnvelope />
           </a>
 
-          <a
-            href={personal.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
+          <a href={personal.linkedin} target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
 
-          <a
-            href={personal.github}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
+          <a href={personal.github} target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
 
-          <a
-            href={personal.whatsapp}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="WhatsApp"
-          >
+          <a href={personal.whatsapp} target="_blank" rel="noreferrer">
             <FaWhatsapp />
           </a>
+
         </div>
 
-        <p
-          className="contact-footer fade-in"
-          style={{ animationDelay: "360ms" }}
-        >
-          {personal.email} · {personal.phone}
-        </p>
-
       </div>
-    </section>
+
+      {/* BOTTOM CENTER TEXT */}
+      <div className="footer-bottom">
+        Ingeniero de Sistemas © 2026 Juan José Chinchilla Lanziano
+      </div>
+
+    </footer>
   );
 }

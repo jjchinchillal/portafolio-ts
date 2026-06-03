@@ -1,6 +1,7 @@
 [
   {
     "category": "Frontend Web",
+    "color": "#61DAFB",
     "items": [
       { "name": "React", "icon": "SiReact", "url": "https://react.dev", "color": "#61DAFB" },
       { "name": "TypeScript", "icon": "SiTypescript", "url": "https://www.typescriptlang.org/docs", "color": "#3178C6" },
@@ -13,6 +14,7 @@
   },
   {
     "category": "Desarrollo Móvil",
+    "color": "#02569B",
     "items": [
       { "name": "Flutter", "icon": "SiFlutter", "url": "https://docs.flutter.dev", "color": "#02569B" },
       { "name": "Dart", "icon": "SiDart", "url": "https://dart.dev/guides", "color": "#0175C2" }
@@ -20,6 +22,7 @@
   },
   {
     "category": "Backend & Bases de Datos",
+    "color": "#3ECF8E",
     "items": [
       { "name": "Node.js", "icon": "SiNodedotjs", "url": "https://nodejs.org/en/docs", "color": "#339933" },
       { "name": "Java", "icon": "SiOpenjdk", "url": "https://docs.oracle.com/en/java", "color": "#EA2D2E" },
@@ -32,6 +35,7 @@
   },
   {
     "category": "DevOps & Herramientas",
+    "color": "#8B8B8B",
     "items": [
       { "name": "Git", "icon": "SiGit", "url": "https://git-scm.com/doc", "color": "#F05032" },
       { "name": "GitHub", "icon": "SiGithub", "url": "https://docs.github.com", "color": "#FFFFFF" },
@@ -40,6 +44,7 @@
   },
   {
     "category": "Gestión & Metodologías",
+    "color": "#FFB020",
     "items": [
       { "name": "Scrum", "icon": "SiScrumalliance", "url": "https://scrumguides.org", "color": "#009FDA" }
     ]
