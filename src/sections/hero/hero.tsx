@@ -1,5 +1,5 @@
 import "./hero.css";
-import profileImg from "../../assets/images/Perfil.png";
+import profileImg from "../../assets/images/Perfil.jpeg";
 import cvPdf from "../../assets/doc/CV-Juan-Jose-Chinchilla.pdf";
 
 import {
