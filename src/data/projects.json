@@ -41,7 +41,7 @@
       "Diseño responsive y accesible",
       "Arquitectura moderna con Vite"
     ],
-    "demo": "https://institutofrances.org",
+    "demo": "https://test-institutofrances.vercel.app/inicio",
     "repo": "https://github.com/jjchinchillal/ViveLaFrance.git"
   },
 
@@ -81,7 +81,7 @@
       "Optimización para SEO",
       "Despliegue en Vercel"
     ],
-    "demo": "https://ami-tierra.vercel.app",
+    "demo": "https://otare.vercel.app/",
     "repo": "https://github.com/jjchinchillal/a-mi-tierra.git"
   },
 
